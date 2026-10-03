@@ -36,6 +36,7 @@ export default function CandidatesTable() {
 
   useEffect(() => {
     fetchCandidates();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage, rowsPerPage, searchTerm]);
 
   // Column definitions for DataTable

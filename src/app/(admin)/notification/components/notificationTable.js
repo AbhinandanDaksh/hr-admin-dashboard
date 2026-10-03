@@ -49,6 +49,7 @@ export default function JobsTable() {
 
   useEffect(() => {
     fetchJobs();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage, rowsPerPage, searchTerm]);
 
   const handleDeleteConfirm = async () => {

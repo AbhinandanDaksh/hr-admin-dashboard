@@ -88,6 +88,7 @@ export default function Sidebar() {
         }
       }
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   const toggleGroup = (groupId) => {

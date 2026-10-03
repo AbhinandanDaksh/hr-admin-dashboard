@@ -21,14 +21,22 @@ Thank you for your interest in contributing to the **HR Admin Dashboard** projec
 src/
 ├── app/                  # Next.js App Router (pages & layouts)
 │   ├── (admin)/          # Protected admin panel routes
-│   │   ├── dashboard/    # Main recruitment analytics dashboard
+│   │   ├── dashboard/    # Recruitment & talent overview
 │   │   ├── notification/ # Job openings management
-│   │   └── users/        # Candidate applications
+│   │   ├── users/        # Candidate ATS pipeline
+│   │   ├── employees/    # Staff directory & modal profiles
+│   │   ├── interviews/   # Interview evaluation tracker
+│   │   ├── attendance/   # Attendance logs & leave approvals
+│   │   ├── payroll/      # Payroll disbursements & summaries
+│   │   ├── reports/      # PDF/CSV audit reports
+│   │   └── settings/     # Multi-tab administrative settings
 │   ├── (auth)/           # Authentication pages (login)
+│   ├── icon.svg          # High-res SVG favicon
 │   └── globals.css       # Global styles & Tailwind theme
 ├── components/
 │   ├── common/           # Universal reusable components
 │   │   ├── Badge.jsx     # Status tag pills
+│   │   ├── BrandLogo.jsx # Vector SVG brand logo
 │   │   ├── DataTable.jsx # Universal table with pagination & states
 │   │   ├── Modal.jsx     # Reusable modal dialog
 │   │   ├── ConfirmDialog.jsx # Confirmation alert modal
@@ -37,11 +45,13 @@ src/
 │   │   ├── SearchInput.jsx # Debounced search input
 │   │   └── StatCard.jsx  # KPI metrics card
 │   ├── ui/               # Low-level primitives (buttons, inputs)
-│   ├── Navbar.js         # Top application bar
-│   └── Sidebar.js        # Responsive sidebar navigation
+│   ├── Navbar.js         # Top navigation bar
+│   └── Sidebar.js        # Collapsible tree-branch navigation
+├── context/
+│   └── SidebarContext.js # Persistent sidebar state management
 └── lib/
     ├── apiClient.js      # Central API client & mock fallback service
-    ├── mockData.js       # Mock datasets for offline / demo mode
+    ├── mockData.js       # Mock datasets for standalone mode
     └── utils.js          # Shared utility functions
 ```
 
@@ -51,7 +61,7 @@ src/
 
 1. **Fork & Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/hr-admin-dashboard.git
+   git clone https://github.com/AbhinandanDaksh/hr-admin-dashboard.git
    cd hr-admin-dashboard
    ```
 
