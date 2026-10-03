@@ -2,10 +2,14 @@
 
 > A modern, elegant, and fully responsive **HR & Workforce Management System** built with **Next.js 15**, **React 19**, and **Tailwind CSS 4**. Designed with a soothing, eye-friendly Minimalist Rose / Slate aesthetic.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-hr--admin--dashboard-rose?style=for-the-badge&logo=vercel)](https://hr-admin-dashboard-beta.vercel.app/)
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-rose.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwindcss)
+
+🔗 **Live Demo URL:** [https://hr-admin-dashboard-beta.vercel.app/](https://hr-admin-dashboard-beta.vercel.app/)
 
 ---
 
